@@ -3,7 +3,11 @@
  * Ссылка на урок: http://softez.pp.ua/2013/06/14/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81-%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BB%D0%B0/
 */
 
+#region Using
+
 using PlugIn;
+
+#endregion
 
 namespace Plugin1
 {
@@ -14,62 +18,47 @@ namespace Plugin1
         private string _PluginDescription = "Описание первого плагина";
         private string _Author = "Dev";
         private int _Version = 100;
-        IPluginHost _Host;
+        private IPluginHost _Host;
 
         public void Show()
         {
-            frmP1Main frm = new frmP1Main( this );
+            FrmP1Main frm = new FrmP1Main( this );
             frm.ShowDialog();
         }
 
         public IPluginHost Host
         {
-            get { return _Host; }
+            get { return this._Host; }
             set
             {
-                _Host = value;
-                _Host.Register( this );
+                this._Host = value;
+                this._Host.Register( this );
             }
         }
 
         public string PluginName
         {
-            get
-            {
-                return _PluginName;
-            }
+            get { return this._PluginName; }
         }
 
         public string DisplayPluginName
         {
-            get
-            {
-                return _DisplayPluginName;
-            }
+            get { return this._DisplayPluginName; }
         }
 
         public string PluginDescription
         {
-            get
-            {
-                return _PluginDescription;
-            }
+            get { return this._PluginDescription; }
         }
 
         public string Author
         {
-            get
-            {
-                return _Author;
-            }
+            get { return this._Author; }
         }
 
         public int Version
         {
-            get
-            {
-                return _Version;
-            }
+            get { return this._Version; }
         }
     }
 }

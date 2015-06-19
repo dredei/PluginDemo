@@ -1,6 +1,6 @@
 ﻿namespace PluginDemo
 {
-    partial class frmMain
+    partial class FrmMain
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -75,7 +75,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PluginDemo";
-            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
 
         }

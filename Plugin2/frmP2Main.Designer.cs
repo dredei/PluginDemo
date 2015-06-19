@@ -1,6 +1,6 @@
 ﻿namespace Plugin2
 {
-    partial class frmP2Main
+    partial class FrmP2Main
     {
         /// <summary>
         /// Required designer variable.

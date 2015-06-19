@@ -1,6 +1,6 @@
 ﻿namespace Plugin1
 {
-    partial class frmP1Main
+    partial class FrmP1Main
     {
         /// <summary>
         /// Required designer variable.
@@ -53,7 +53,7 @@
             this.Name = "frmP1Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmP1Main";
-            this.Load += new System.EventHandler(this.frmP1Main_Load);
+            this.Load += new System.EventHandler(this.FrmP1Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
